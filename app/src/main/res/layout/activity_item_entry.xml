@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:background-color="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greyLight"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/header_item" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginStart="@dimen/_10ssp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_10ssp"
+            app:cardCornerRadius="@dimen/_5ssp"
+            app:cardElevation="@dimen/_8ssp"
+            app:contentPadding="@dimen/_5ssp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:orientation="vertical">
+
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5ssp"
+                    android:background="@drawable/sp_bg"
+                    android:entries="@array/vehicle_item"
+                    android:padding="@dimen/_8ssp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/text_mobile"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5ssp"
+                    android:hint="@string/itemQuantity"
+                    android:textColorHint="@color/black"
+                    app:boxStrokeColor="@color/black"
+                    app:hintTextColor="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@drawable/white_cursor"
+                        tools:text="12-08-2021" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/text_date"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_70ssp"
+                    android:layout_marginTop="@dimen/_5ssp"
+                    android:layout_marginEnd="@dimen/_70ssp"
+                    android:layout_marginBottom="@dimen/_5ssp"
+                    android:hint="@string/date"
+                    android:textColorHint="@color/black"
+                    app:boxStrokeColor="@color/black"
+                    app:hintTextColor="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:focusableInTouchMode="false"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@drawable/white_cursor"
+                        tools:text="12-08-2021" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btnSave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30ssp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_5ssp"
+                    android:background="@drawable/square_gradient_share_background"
+                    android:gravity="center"
+                    android:text="@string/save"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

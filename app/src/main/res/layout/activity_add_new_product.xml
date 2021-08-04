@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/header_item" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include"
+        android:layout_marginTop="@dimen/_30ssp">
+
+        <RelativeLayout
+            android:id="@+id/rlDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp">
+
+            <com.senso.e_trader.helper.SquareImageView
+                android:id="@+id/icImage"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:background="@drawable/square"
+                android:padding="@dimen/_5sdp"
+                app:srcCompat="@drawable/camera" />
+
+            <TextView
+                android:id="@+id/textAddImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icImage"
+                android:paddingTop="@dimen/_5sdp"
+                android:text="@string/AddCategoryImage"
+                android:textAppearance="@style/textFormat"
+                android:textColor="@color/black" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textCategoryName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textAddImage"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:hint="@string/categoryName"
+                android:textColorHint="@color/black"
+                app:boxBackgroundMode="filled"
+                app:boxStrokeColor="@color/black"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCategoryName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences"
+                    android:paddingTop="@dimen/_15ssp"
+                    android:paddingBottom="@dimen/_5ssp"
+                    android:textColor="#80000000"
+                    tools:text="Chicken Roll" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textShowCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textCategoryName"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:hint="@string/rate"
+                android:textColorHint="@color/black"
+                app:boxBackgroundMode="filled"
+                app:boxStrokeColor="@color/black"
+               >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etShowCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawableTint="@color/black"
+
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:paddingTop="@dimen/_15ssp"
+                    android:paddingBottom="@dimen/_5ssp"
+                    android:textColor="#80000000"
+
+                    tools:text="Veg" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnAddCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_30ssp"
+        android:background="@drawable/rectangle_8"
+        android:text="@string/add"
+        android:textAppearance="@style/buttonTextSize"  />
+
+</RelativeLayout>

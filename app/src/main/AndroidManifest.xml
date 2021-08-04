@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.senso.e_trader">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/conference"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/conference"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ETrader">
+        <activity android:name=".AddNewProductActivity"></activity>
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".HistoryActivity" />
+        <activity android:name=".DashBoardSecondActivity" />
+        <activity android:name=".PaymentViewActivity" />
+        <activity android:name=".ItemEntryActivity" />
+        <activity android:name=".DashBoardActivity" />
+        <activity android:name=".BaseActivity" />
+        <activity
+            android:name=".registration.RegisterSecondActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".registration.RegisterFirstActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

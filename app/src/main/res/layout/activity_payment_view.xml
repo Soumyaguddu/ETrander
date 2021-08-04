@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greyLight">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/header_item" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include"
+        android:layout_margin="@dimen/_10ssp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_defaultMethod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="2">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbBothOption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:shadowColor="@color/themeColor"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bothoption"
+                        android:gravity="left|center"
+                        android:textColor="#80000000"
+                        android:textStyle="bold"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#60000000"
+                    android:paddingStart="@dimen/_2ssp"
+                    android:layout_marginStart="@dimen/_22sdp"
+                    android:text="@string/textBoth"/>
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:layout_marginTop="@dimen/_8ssp"
+            android:layout_marginBottom="@dimen/_8ssp"
+            android:background="@color/lightGrey"
+            tools:ignore="SmallSp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="2">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/rbCashOnDelivery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="@color/themeColor"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cashOnDelivery"
+                    android:gravity="left|center"
+                    android:textColor="#80000000"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#60000000"
+                android:paddingStart="@dimen/_2ssp"
+                android:layout_marginStart="@dimen/_22sdp"
+                android:text="@string/textCashOnDelivery"/>
+
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:layout_marginTop="@dimen/_8ssp"
+            android:layout_marginBottom="@dimen/_8ssp"
+            android:background="@color/lightGrey"
+            tools:ignore="SmallSp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="2">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/rbOnlinePayment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="@color/themeColor"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/onlinePayment"
+                    android:gravity="left|center"
+                    android:textColor="#80000000"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#60000000"
+                android:paddingStart="@dimen/_2ssp"
+                android:layout_marginStart="@dimen/_22sdp"
+                android:text="@string/textOnlinePayment"/>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnPaymentDefaultNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20ssp"
+        android:padding="@dimen/_10ssp"
+        android:background="@drawable/square_gradient_share_background"
+        android:gravity="center"
+        android:textAppearance="@style/buttonTextSize"
+        android:text="@string/saveChanges"
+        android:textColor="@color/white" />
+</RelativeLayout>

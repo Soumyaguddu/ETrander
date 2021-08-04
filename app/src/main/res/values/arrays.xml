@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="vehicle_item">
+        <item>Vehicles</item>
+        <item>4 Wheels</item>
+        <item>10 Wheels</item>
+        <item>12 Wheels</item>
+        <item>16 Wheels</item>
+
+
+    </string-array>
+</resources>

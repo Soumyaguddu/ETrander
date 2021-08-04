@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/itemFragment"
+        android:title="@string/items"
+        android:orderInCategory="1"
+        app:showAsAction="always"
+        android:icon="@drawable/item"
+        />
+    <item android:id="@id/orderFragment"
+        android:title="@string/doctors"
+        app:showAsAction="always"
+        android:orderInCategory="2"
+        android:icon="@drawable/order"
+        />
+
+    <item android:id="@id/profileFragment"
+        android:title="@string/profile"
+        android:orderInCategory="3"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/profile"
+        />
+</menu>

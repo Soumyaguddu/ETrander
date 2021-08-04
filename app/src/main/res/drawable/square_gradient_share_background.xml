@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+
+
+        <shape android:shape="rectangle">
+            <solid android:color="@color/green"/>
+
+            <gradient
+                android:startColor="#74B0DF"
+                android:centerColor="#4296D8"
+                android:endColor="#4C94CD"
+                android:angle="90"/>
+            <!--corners allow us to make the rounded corners button-->
+            <corners android:radius="5dp" />
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_second"
+    app:startDestination="@id/itemSecondFragment">
+
+    <fragment
+        android:id="@+id/itemSecondFragment"
+        android:name="com.senso.e_trader.fragment.ItemSecondFragment"
+        android:label="fragment_item_second"
+        tools:layout="@layout/fragment_item_second" >
+        <action
+            android:id="@+id/action_itemSecondFragment_to_itemEntryFragment"
+            app:destination="@id/itemEntryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemEntryFragment"
+        android:name="com.senso.e_trader.fragment.ItemEntryFragment"
+        android:label="fragment_item_entry"
+        tools:layout="@layout/fragment_item_entry" >
+        <action
+            android:id="@+id/action_itemEntryFragment_to_historyFragment"
+            app:destination="@id/historyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.senso.e_trader.fragment.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" >
+        <action
+            android:id="@+id/action_historyFragment_to_profileSecondFragment"
+            app:destination="@id/profileSecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileSecondFragment"
+        android:name="com.senso.e_trader.fragment.ProfileSecondFragment"
+        android:label="fragment_profile_second"
+        tools:layout="@layout/fragment_profile_second" />
+
+</navigation>

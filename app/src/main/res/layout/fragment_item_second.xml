@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greyLight">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/header_main_item" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:paddingTop="@dimen/_12sdp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/_5ssp"
+                android:layout_marginTop="@dimen/_5ssp"
+                app:cardElevation="@dimen/_5ssp"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/rlFirst"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_5ssp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:text="Sen Decorators"
+                            android:textAppearance="@style/textFormat"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:text="₹ 2545"
+                            android:textStyle="bold"
+                            android:textAppearance="@style/textFormat"
+                            />
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/rlSecond"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rlFirst"
+                        android:padding="@dimen/_5ssp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:text="8 Lorry Sand/বালি"
+
+                            android:textStyle="bold"
+                            android:textAppearance="@style/textFormat"
+                            android:textColor="@color/lightGrey"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:text="21-06-2021"
+
+                            android:textAppearance="@style/textFormat"
+                            />
+
+
+                    </RelativeLayout>
+
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/_5ssp"
+                android:layout_marginTop="@dimen/_5ssp"
+                app:cardElevation="@dimen/_5ssp"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/rlFirsts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_5ssp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:text="Raj Decorators"
+                            android:textAppearance="@style/textFormat"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:text="₹ 1230"
+                            android:textStyle="bold"
+                            android:textAppearance="@style/textFormat"
+                           />
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/rlSeconds"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rlFirsts"
+                        android:padding="@dimen/_5ssp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:text="6 Lorry Stone Chips/স্টোন চিপস"
+
+                            android:textStyle="bold"
+                            android:textAppearance="@style/textFormat"
+                            android:textColor="@color/lightGrey"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:text="12-06-2021"
+
+                            android:textAppearance="@style/textFormat"
+                            />
+
+
+                    </RelativeLayout>
+
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
