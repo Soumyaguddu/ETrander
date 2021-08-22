@@ -6,6 +6,8 @@ import com.senso.e_trader.R
 import kotlinx.android.synthetic.main.header_item.*
 
 class AddNewProductActivity : BaseActivity() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_new_product)
